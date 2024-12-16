@@ -1,0 +1,114 @@
+.weather-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f2f6;
+    color: #2f3542;
+    min-height: 100vh;
+  }
+  
+  .main-info {
+    background: #70a1ff;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .icon {
+    margin-top: 10px;
+  }
+  
+  .extra-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .hourly-forecast,
+  .weekly-forecast {
+    margin-top: 20px;
+  }
+  
+  .hourly-cards,
+  .weekly-cards {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .hour-card,
+  .day-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+  }
+  
+  .hour-card p,
+  .day-card p {
+    margin: 5px 0;
+  }
+  
+  h3 {
+    color: #2f3542;
+    margin-bottom: 10px;
+  }
+  .map-container {
+    margin-top: 20px;
+  }
+  
+  .map-container h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .leaflet-container {
+    border-radius: 10px;
+  }
+ /* Loading container to center spinner and text */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Centered on the screen */
+}
+
+/* Spinner animation */
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px; /* Space between spinner and text */
+}
+
+/* Spinner animation keyframes */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Style for the loading text */
+.loading-container p {
+  font-size: 18px;
+  color: #3498db;
+  margin-top: 10px; /* Adds some space above the text */
+}
+
+  
